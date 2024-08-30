@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Digital Printing</title>
+        <link rel="stylesheet" href="../asset/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        
+        <!-- Sidebar -->
+        <input type="checkbox" id="nav-toggle">
+            <div class="sidebar">
+                <div class="sidebar-brand">
+                    <h2><span><img src="https://img.icons8.com/windows/50/000000/accusoft.png"/></span><span><i>Digital Printing</i></span></h2>
+                </div>
+                
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="../dashboard/index.html" class="active"><span class="bi bi-house-fill"></span>
+                            <span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="../pelanggan/index.html" class="active-menu"><span class="bi bi-person"></span>
+                            <span>Pelanggan</span></a>
+                        </li>
+                        <li>
+                            <a href="../produk/index.html" class="active-menu"><span class="bi bi-clipboard"></span>
+                            <span>Produk</span></a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-chevron-double-down"></span>
+                            Lainnya
+                                </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item text-dark" href="../penjualan/index.html">Penjualan</a></li>
+                        <li><a class="dropdown-item text-dark" href="../pesanan/index.html">Pesanan</a></li>
+                        </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <header>
+                    <h2>
+                        <label for="nav-toggle">
+                            <span class="bi bi-list-ul"></span>
+                        </label>
+                        
+                        Dashboard
+                    </h2>
+                    
+                    <div class="search-wrapper">
+                        <span class="bi bi-search"></span>
+                        <input type="search" placeholder="Search here" />
+                    </div>
+                    
+                    <div class="user-wrapper">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="40px" height="40px" alt="">
+                        <div>
+                            <h4>admin</h4>
+                            <small>youremail123@gmail.com</small>
+                        </div>
+                    </div>
+                </header>
+                
+                <main>
+                            <div class="container container-lg">
+                    <div class="cards">
+                        <div class="card-single">
+                            <div>
+                                <h1>8492</h1>
+                                <span>Pelanggan</span>
+                            </div>
+                        <div>
+                            <span class="bi bi-people-fill"></span>
+                        </div>
+                    </div>
+                        <div class="card-single">
+                            <div >
+                                <h1>9256</h1>
+                                <span>Produk</span>
+                            </div>
+                        <div>
+                            <span class="bi bi-clipboard2-data-fill"></span>
+                        </div>
+                    </div>
+                        <div class="card-single">
+                            <div>
+                                <h1>23k</h1>
+                                <span>Pesanan</span>
+                            </div>
+                        <div>
+                            <span class="bi bi-bag-fill"></span>
+                        </div>
+                    </div>
+                        <div class="card-single">
+                            <div>
+                                <h1>140k$</h1>
+                                <span>Penghasilan</span>
+                            </div>
+                        <div>
+                            <span class="bi bi-wallet2"></span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="recent-grid">
+                    <div class="projects">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Produk Terkini</h3>
+                            <a href="pesanan"><button>LIhat Semua <span class="bi bi-arrow-right"></span></button></a>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Produk</td>
+                                            <td>Waktu Pengerjaan</td>
+                                            <td>Status<td>
+                                                
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Spanduk</td>
+                                            <td>5 Jam</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                Review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Billboard</td>
+                                            <td>1 Hari</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                In Progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Backdrop</td>
+                                            <td>1 Hari</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                In Progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banner</td>
+                                            <td>3 Jam</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                Pending
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poster</td>
+                                            <td>2 Jam</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                In Progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Neonbox</td>
+                                            <td>2 Hari</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                Review
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>Banner</td>
+                                            <td>3 Jam</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                Pending
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="customers">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Pelanggan Baru</h3>
+                                
+                            <a href="pelanggan"><button class="button-pelanggan">See all <span class="bi bi-arrow-right"></span></button></a>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="customer">
+                                    <div class="info">
+                                    <img src="https://i.mydramalist.com/4bA2df.jpg" width="40px" height="40px" alt="" >
+                                        <div>
+                                            <h4>Wu Xuanyi</h4>
+                                            <small>Pelanggan</small>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <span class="bi bi-person-circle"></span>
+                                        <span class="bi bi-chat-square-text"></span>
+                                        <span class="bi bi-telephone"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="customer">
+                                    <div class="info">
+                                    <img src="https://cdn1-production-images-kly.akamaized.net/EVLWhqgNrdi3ATcPgKc3MqCJD24=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2947524/original/014680900_1571822263-Jennie_4.JPG" width="40px" height="40px" alt="" >
+                                        <div>
+                                            <h4>Jennie</h4>
+                                            <small>Pelanggan</small>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <span class="bi bi-person-circle"></span>
+                                        <span class="bi bi-chat-square-text"></span>
+                                        <span class="bi bi-telephone"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="customer">
+                                    <div class="info">
+                                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="40px" height="40px" alt="" >
+                                        <div>
+                                            <h4>Rahmat_86</h4>
+                                            <small>Pelanggan</small>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <span class="bi bi-person-circle"></span>
+                                        <span class="bi bi-chat-square-text"></span>
+                                        <span class="bi bi-telephone"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="customer">
+                                    <div class="info">
+                                    <img src="data:image/jpeg;base64,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" width="40px" height="40px" alt="" >
+                                        <div>
+                                            <h4>user_29187</h4>
+                                            <small>Pelanggan</small>
+                                        </div>
+                                    </div>
+                                    <div class="contact">
+                                        <span class="bi bi-person-circle"></span>
+                                        <span class="bi bi-chat-square-text"></span>
+                                        <span class="bi bi-telephone"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+                </main>
+            </div>
+        <!-- End Sidebar -->
+        
+        
+        
+        <!-- JS -->
+       <script>
+         const labels = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+        ];
+            const data = {
+            labels: labels,
+            datasets: [{
+            label: 'Penjualan',
+            backgroundColor: ['orange', 'blue', 'skyblue', 'yellow', 'teal', 'darkblue'],
+            borderColor: 'black',
+            data: [500, 5000, 9000, 6000, 16000, 24000, 25000],
+            borderWidth: 2
+        }]
+        };
+        
+            const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                plugins:{
+                    legend:{
+                        display: false
+                    },
+                    title:{
+                        display: true,
+                        text: 'Penjualan'
+                    }
+                }
+            }
+        };
+        
+        var myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+        );
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

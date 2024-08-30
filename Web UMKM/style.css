@@ -1,0 +1,18 @@
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+}
+
+.tim img {
+    width: 180px;
+    border: 10px solid #cccccc;
+}
+

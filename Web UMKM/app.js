@@ -1,0 +1,1 @@
+alert('Ini adalah Project Web UMKM saya dari hasil magang di Gamelab.id');

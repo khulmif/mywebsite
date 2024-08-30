@@ -1,0 +1,104 @@
+* {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+section{
+	padding: 100px;
+}
+
+.logo span {
+	color: crimson;
+}
+
+.banner{
+	position: relative;	
+	min-height: 100vh;
+	background: url('../../img/images.jfif');
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner h2{
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1em;
+}
+.banner h2 span{
+	font-size: 0.8em;
+	font-weight: 700;
+}
+.banner h3{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 500;
+}
+.btn{
+	position: relative;
+	background: #219;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size:18;
+	letter-spacing: 2px;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;	
+	transition: 0.4s;
+}
+header.sticky{
+	background: #fff;
+	padding: 20px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+	color: #fff;
+	font-size: 24px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+header.sticky .logo{
+	color:#111;
+}
+
+.footer{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+@media only screen and (max-width:568px){
+	section {
+		padding: 10px;
+	}
+
+	header {
+		padding: 10px;
+	}
+
+	header.sticky{
+		padding: 40px;
+	}
+}

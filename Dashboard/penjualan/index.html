@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Digital Printing</title>
+        <link rel="stylesheet" href="../asset/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        
+        <!-- Sidebar -->
+        <input type="checkbox" id="nav-toggle">
+            <div class="sidebar">
+                <div class="sidebar-brand">
+                    <h2><span><img src="https://img.icons8.com/windows/50/000000/accusoft.png"/></span><span><i>Digital Printing</i></span></h2>
+                </div>
+                
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="../dashboard/index.html" class="active-menu"><span class="bi bi-house-fill"></span>
+                            <span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="../pelanggan/index.html" class="active-menu"><span class="bi bi-person"></span>
+                            <span>Pelanggan</span></a>
+                        </li>
+                        <li>
+                            <a href="../produk/index.html" class="active-menu"><span class="bi bi-clipboard"></span>
+                            <span>Produk</span></a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-chevron-double-down"></span>
+                            Lainnya
+                                </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item text-dark" href="../penjualan/index.html">Penjualan</a></li>
+                        <li><a class="dropdown-item text-dark" href="../pesanan/index.html">Pesanan</a></li>
+                        </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <header>
+                    <h2>
+                        <label for="nav-toggle">
+                            <span class="bi bi-list-ul"></span>
+                        </label>
+                        
+                        Penjualan
+                    </h2>
+                    
+                    <div class="search-wrapper">
+                        <span class="bi bi-search"></span>
+                        <input type="search" placeholder="Search here" />
+                    </div>
+                    
+                    <div class="user-wrapper">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="40px" height="40px" alt="">
+                        <div>
+                            <h4>admin</h4>
+                            <small>youremail123@gmail.com</small>
+                        </div>
+                    </div>
+                </header>
+                
+                <main>
+                    <div id="chart-penjualan">
+                        <div class="chart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        <!-- End Sidebar -->
+        
+        
+        
+        <!-- JS -->
+       <script>
+         const labels = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+        ];
+            const data = {
+            labels: labels,
+            datasets: [{
+            label: 'Penjualan',
+            backgroundColor: ['orange', 'blue', 'skyblue', 'yellow', 'teal', 'darkblue'],
+            borderColor: 'black',
+            data: [500, 5000, 9000, 6000, 16000, 24000, 25000],
+            borderWidth: 2
+        }]
+        };
+        
+            const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                plugins:{
+                    legend:{
+                        display: false
+                    },
+                    title:{
+                        display: true,
+                        text: 'Penjualan'
+                    }
+                }
+            }
+        };
+        
+        var myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+        );
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
